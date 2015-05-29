@@ -48,24 +48,24 @@ See pin_switch var Arduino vs Attiny
   const int temps_une_led =   100; // display repet light per led = 30 for arduino and 5 for ATTINY
   const int pin_switch =      0;   // match pin between ATTINY and arduino
 #endif
+//-------------Const Variables----------------------------------------------------
+const int Pin1 = 1;           // Define const for PIN1
+const int Pin2 = 2;           // Define const for PIN2
+const int Pin3 = 3;           // Define const for PIN3
+const int Pin4 = 4;           // Define const for PIN4
+const int Pin5 = 5;           // Define const for PIN5
+const int Pin6 = 6;           // Define const for PIN6
+const int Pin7 = 7;           // Define const for PIN6
 
-const int Pin1 = 1;
-const int Pin2 = 2;
-const int Pin3 = 3;
-const int Pin4 = 4;
-const int Pin5 = 5;
-const int Pin6 = 6;
-const int Pin7 = 7;
+const int PinButton = 2;      // Define const for Button PIN
 
-const int PinButton = 2;
+const int redPin    = 1;      // Define const for color RED
+const int greenPin  = 2;      // Define const for color GREEN
+const int bluePin   = 3;      // Define const for color BLUE
 
-const int redPin = 1;
-const int greenPin = 2;
-const int bluePin = 3;
+const int coef      =30;      // Define time dipslay
 
-const int coef =30;
-
-int MAXPlayer = 6;
+int MAXPlayer       = 6;
 volatile int NBPlayer =2;
 volatile unsigned long button_time = 0;  
 volatile unsigned long last_button_time = 0; 
